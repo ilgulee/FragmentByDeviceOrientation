@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/landscape"
+    tools:context=".MainActivity"
+    android:baselineAligned="false">
+
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="ilgulee.com.fragmentbydeviceorientationold.ListFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        tools:layout="@layout/fragment_list" />
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="ilgulee.com.fragmentbydeviceorientationold.DetailFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        tools:layout="@layout/fragment_detail" />
+</LinearLayout>
